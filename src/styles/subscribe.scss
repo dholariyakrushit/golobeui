@@ -1,0 +1,120 @@
+@import "./variable.scss";
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.subscribes {
+  margin-top: 116px;
+  position: relative;
+  z-index: 1 !important;
+  margin-bottom: -151px;
+  .subscribe {
+    max-width: 1232px;
+    min-height: 305px;
+    box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+    border-radius: 20px;
+    background: #cdeae1;
+
+    @media (max-width: "576") {
+      text-align: center;
+    }
+  }
+  .travel {
+    padding: 24px;
+     @media (max-width: "991px") {
+        text-align: center;
+      }
+    h2 {
+      font-family: "TradeGothic LT Extended";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 54px;
+     
+      @media (max-width: "575px") {
+        font-size: 35px;
+      }
+    }
+    .the-travel {
+      font-family: "TradeGothic LT Extended";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+      opacity: 0.8;
+      margin-bottom: 8px;
+      
+      @media (max-width: "575px") {
+        font-size: 17px;
+      }
+    }
+    .text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      opacity: 0.7;
+      @media (max-width: "575px") {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+    form {
+      display: flex;
+      gap: 16px;
+      @media (max-width: "320px") {
+        flex-direction: column;
+      }
+      input {
+        width: 473px;
+        height: 56px;
+        border-radius: 4px;
+        padding-left: 18px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        @media (max-width: "320px") {
+          width: 250px !important;
+        }
+      }
+    }
+  }
+  .img {
+    float: right;
+    margin-right: 24px;
+    @media (max-width: "768px") {
+      margin: auto !important;
+    }
+  }
+}
+
+.footer {
+  min-height: 422px;
+  background: #8dd3bb;
+
+  &-aline {
+    padding-top: 200px;
+
+    .img {
+      margin-left: 13.78px;
+    }
+    .title {
+      font-family: "TradeGothic LT Extended";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #112211;
+    }
+    .text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #112211;
+      opacity: 0.7;
+    }
+  }
+}

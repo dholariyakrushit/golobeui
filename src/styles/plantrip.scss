@@ -1,0 +1,76 @@
+@import "./variable.scss";
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.plantrip {
+  margin-top: 80px;
+
+  &-perfect {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: "576px") {
+      flex-direction: column;
+      text-align: center;
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 32px;
+      @media (max-width: "320px") {
+        font-size: 24px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      @media (max-width: "320px") {
+        font-size: 13px;
+      }
+    }
+    .places-btns {
+      height: 25px;
+      .places-btn {
+        @include button;
+        padding: 12px !important;
+        border: 1px solid #8dd3bb !important;
+      }
+    }
+  }
+  .citys {
+    max-width: 389.33px;
+    min-height: 122px;
+    background: #ffffff;
+    box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+    border-radius: 16px;
+    @media (max-width: "768px") {
+      margin: auto;
+      justify-content: center;
+    }
+    &-detail {
+      display: flex;
+      padding: 16px;
+      align-items: center;
+      gap: 16px;
+
+      .city-name {
+        font-weight: 600;
+        font-size: 16px;
+        opacity: 0.7;
+        margin: 0 !important;
+        line-height: 20px;
+        margin-bottom: 8px !important;
+      }
+      .city-place {
+        margin: 0 !important;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}

@@ -1,0 +1,188 @@
+@import "./variable.scss";
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.showfligth-container {
+  padding: 0;
+  .showfligth {
+    background: #ffffff;
+    box-shadow: 0px 4px 16px rgba(141, 211, 187, 0.15);
+    border-radius: 16px;
+    min-height: 280px;
+    margin-top: -97px;
+
+    .flights {
+      @include text-style();
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: black;
+      margin: 0;
+      padding-top: 29px;
+      padding-bottom: 29px;
+      &:hover {
+        border-bottom: 4px solid #8dd3bb;
+      }
+    }
+    .stays {
+      @include text-style();
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: black;
+      margin: 0;
+      padding-top: 29px;
+      padding-bottom: 29px;
+      &:hover {
+        border-bottom: 4px solid #8dd3bb;
+      }
+    }
+    .fligts-border-stays {
+      width: 48px;
+      height: 0px;
+      border: 1px solid #d7e2ee;
+      transform: rotate(90deg);
+    }
+    .flex-flights {
+      padding-top: 16px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+    }
+
+    .trip-detail {
+      margin-top: 33px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      @media (max-width: "992px") {
+        flex-wrap: wrap;
+        row-gap: 25px;
+      }
+      @media (max-width: "768px") {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+      }
+
+      .from-to {
+        padding: 0px;
+        gap: 10px;
+        width: 324px;
+        height: 56px;
+        background: #ffffff;
+        border: 1px solid #79747e;
+        border-radius: 4px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        position: relative;
+
+        @media (max-width: "320px") {
+          width: 275px;
+        }
+
+        p {
+          margin: 0;
+          position: absolute;
+          top: -12px;
+          background-color: white;
+          left: 10px;
+          padding: 0px 4px 0px 3px;
+        }
+
+        .city {
+          padding-top: 17px;
+          padding-bottom: 18px;
+          padding-left: 16px;
+          padding-right: 16px;
+          display: flex;
+        }
+      }
+    }
+
+    .trip {
+      background: #ffffff;
+      border: 1px solid #79747e;
+      border-radius: 4px;
+      width: 140px;
+      height: 56px;
+      position: relative;
+      .trip-title {
+        background-color: #ffffff;
+        position: absolute;
+        top: -12px;
+        left: 5px;
+        padding: 0px 4px 0px 3px;
+      }
+      .return-trip {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .depart-return {
+      border: 1px solid #79747e;
+      border-radius: 4px;
+      width: 324px;
+      height: 56px;
+      position: relative;
+      @media (max-width: "320px") {
+        width: 275px;
+      }
+      p {
+        margin: 0;
+        position: absolute;
+        top: -12px;
+        background-color: white;
+        left: 10px;
+        padding: 0px 4px 0px 3px;
+      }
+      .date {
+        padding-top: 17px;
+        padding-bottom: 18px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+    .passenger-class {
+      border: 1px solid #79747e;
+      border-radius: 4px;
+      width: 324px;
+      height: 56px;
+      position: relative;
+      @media (max-width: "320px") {
+        width: 275px;
+      }
+      p {
+        margin: 0;
+        position: absolute;
+        top: -12px;
+        background-color: white;
+        left: 10px;
+        padding: 0px 4px 0px 3px;
+      }
+      .passenger {
+        padding-top: 17px;
+        padding-bottom: 18px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+    .button-con {
+      margin-top: 32px;
+      text-align: end;
+      margin-right: 30px;
+      @media (max-width:"320px") {
+        text-align: center;
+      }
+      .add-promo-btn {
+        @include button;
+      }
+    }
+  }
+}

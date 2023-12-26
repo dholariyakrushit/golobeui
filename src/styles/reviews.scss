@@ -1,0 +1,146 @@
+@import "./variable.scss";
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.reviews {
+  margin-top: 70px;
+  &-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: "576px") {
+      flex-direction: column;
+      text-align: center;
+    }
+    h3 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      color: #000000;
+      @media (max-width: "320px") {
+        font-size: 24px;
+      }
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+      @media (max-width: "320px") {
+        font-size: 13px;
+      }
+    }
+    .places-btns {
+      height: 25px;
+      .places-btn {
+        @include button;
+        padding: 12px !important;
+        border: 1px solid #8dd3bb !important;
+      }
+    }
+  }
+  &-cards {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    .card {
+      padding: 24px;
+      max-width: 425px;
+      height: 584px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 26px 26px rgba(141, 211, 187, 1);
+      @media (max-width: "320px") {
+        height: 496px;
+        box-shadow: 16px 16px rgba(141, 211, 187, 1);
+      }
+      h4 {
+        font-family: "TradeGothic LT Extended";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        @media (max-width: "320px") {
+          font-size: 14px;
+        }
+      }
+      .text {
+        height: 37px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        opacity: 0.5;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media (max-width: "320px") {
+          font-size: 12px;
+        }
+      }
+      .view-more {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        border: none !important;
+        text-align: end;
+        &:hover {
+          color: $base-color;
+        }
+      }
+      .star-group {
+        margin-top: 11px;
+        .img {
+          margin-left: 13.5px;
+        }
+      }
+      .name {
+        margin-top: 21.5px;
+        font-family: "TradeGothic LT Extended";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: #112211;
+        margin-bottom: 0;
+      }
+      .title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #112211;
+        opacity: 0.5;
+      }
+      .google-logo {
+        font-family: "TradeGothic LT Extended";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #112211;
+
+        .google {
+          opacity: 0.4;
+          margin-left: 10px;
+        }
+      }
+      .post {
+        margin-top: 44.5px;
+        @media (max-width:"320px") {
+            margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+.swiper-slide {
+  max-width: fit-content;
+  margin-right: 50px;
+}
+

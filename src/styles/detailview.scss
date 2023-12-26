@@ -1,0 +1,70 @@
+@import "./variable.scss";
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.views {
+  margin-top: 80px;
+  &-flight {
+    max-width: 604px;
+    height: 559px;
+    background-image: url("../assets/detailview/flights.jpg");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 24px;
+    margin: auto;
+    background-repeat: no-repeat;
+    border: 24px;
+    border-radius: 24px;
+    @media (max-width: "1200px") {
+      height: 559px;
+    }
+  }
+
+  &-hotels {
+    max-width: 604px;
+    height: 559px;
+    background-image: url("../assets/detailview/hotels.svg");
+
+    display: flex;
+    background-position: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 24px;
+    background-repeat: no-repeat;
+    margin: auto;
+    border: 24px;
+    border-radius: 24px;
+    @media (max-width: "992px") {
+      height: 559px;
+    }
+  }
+}
+.flight-detail {
+  h3 {
+    font-family: "TradeGothic LT Extended";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 51px;
+    color: #ffffff;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+  .show-btn {
+    width: 144px;
+    height: 48px;
+    @include button;
+    background: #ffffff;
+  }
+}
